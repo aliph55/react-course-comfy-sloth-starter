@@ -1,9 +1,36 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Contact = () => {
-  return <h4>contact section</h4>
-}
+  return (
+    <Wrapper>
+      <div className="section-center">
+        <h3>Join our newslatter and get 20% off</h3>
+        <div className="content">
+          <p>
+            no it is it to proident to be be time that nice let it be coaching
+            coaching pain pleasure coaching. escape something that who criticize
+            I will come let it be school district who from forsake escape wishes
+            our proident softens something who school district.
+          </p>
+          <form
+            action="https://formspree.io/f/xoqzqnlj"
+            method="POST"
+            className="contact-form"
+          >
+            <input
+              className="form-input"
+              placeholder="enter email"
+              type="email"
+              name="_replyto"
+            />
+            <button className="submit-btn">subscribe</button>
+          </form>
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -67,6 +94,6 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
-`
+`;
 
-export default Contact
+export default Contact;
